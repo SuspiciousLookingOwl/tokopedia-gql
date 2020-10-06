@@ -21,7 +21,7 @@ export const normalizeProductResult = (product: Product<"Raw">): Product<"Normal
 	let newProduct: Product = product;
 	newProduct = JSON.parse(JSON.stringify(product, (k,v) => (keyToRemove.includes(k) )? undefined : v));
 	newProduct.originalPrice = +product.originalPrice.replace(/\D/g,"");
-	newProduct.price = +product.price;
+	newProduct.price = +product.price.replace(/\D/g,"");
 	return newProduct;
 };
 
