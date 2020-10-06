@@ -1,0 +1,38 @@
+{
+  "name": "tokopedia-gql",
+  "version": "0.0.1",
+  "description": "Tokopedia GraphQL API Wrapper for Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc && jest",
+    "compile": "tsc",
+    "dev": "tsc --watch",
+    "dev:test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuspiciousLookingOwl/tokopedia-gql.git"
+  },
+  "keywords": [
+    "tokopedia"
+  ],
+  "author": "Owl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuspiciousLookingOwl/tokopedia-gql/issues"
+  },
+  "homepage": "https://github.com/SuspiciousLookingOwl/tokopedia-gql#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "jest": "^26.5.2",
+    "ts-jest": "^26.4.1",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.0.3"
+  }
+}
