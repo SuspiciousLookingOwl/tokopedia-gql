@@ -37,8 +37,8 @@ run();
 Output example:
 ```js
 {
-  id: 384418061,
-  name: 'LAPTOP ASUS X441BA - AMD A4 9125 4GB 1TB VGA AMD R3 14" WIN10 RESMI',
+  id: 509988891,
+  name: 'ACER SWIFT 3 SF314-i5 8265U|NVIDIA MX250 2GB|4GB|1TB|14" FHD|WIN10|',
   badges: [
     {
       title: 'Official Store',
@@ -50,23 +50,23 @@ Output example:
   categoryBreadcrumb: 'komputer-laptop/laptop/laptop-consumer',
   categoryId: 297,
   categoryName: 'Komputer & Laptop',
-  countReview: 766,
-  discountPercentage: 6,
-  imageUrl: 'https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/4/2/5109002/5109002_af3c07d2-463f-47c0-9152-153c5a4543f8_1000_1000',
-  labelGroups: [],
-  originalPrice: 3999000,
-  price: NaN,
+  countReview: 45,
+  discountPercentage: 7,
+  imageUrl: 'https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/5/12/69830966/69830966_82cf6f04-8212-4d85-adb7-2b999fac792c_758_758',
+  labelGroups: [ { position: 'promo', title: 'Cashback', type: 'lightGreen' } ],
+  originalPrice: 9999000,
+  price: 9299000,
   priceRange: '',
   rating: 5,
   shop: {
-    id: 607744,
-    name: 'Protech Computer',
-    url: 'https://www.tokopedia.com/protechcom',
+    id: 6309604,
+    name: 'Collins Official',
+    url: 'https://www.tokopedia.com/collinsofficial',
     city: 'Jakarta Pusat',
     isOfficial: true,
     isPowerBadge: true
   },
-  url: 'https://www.tokopedia.com/protechcom/laptop-asus-x441ba-amd-a4-9125-4gb-1tb-vga-amd-r3-14-win10-resmi?whid=0'
+  url: 'https://www.tokopedia.com/collinsofficial/acer-swift-3-sf314-i5-8265u-nvidia-mx250-2gb-4gb-1tb-14-fhd-win10?whid=0'
 }
 ```
 
