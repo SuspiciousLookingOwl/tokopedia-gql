@@ -3,5 +3,5 @@ import * as constants from "./constants";
 
 export = {
 	search,
-	...constants
-}
+	...constants,
+};

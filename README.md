@@ -5,6 +5,7 @@ Simple Wrapper for Tokopedia GQL Api. Intended for usage in Node environment.
 ---
 
 ## Installation
+
 ```
 npm i tokopedia-gql
 ```
@@ -12,29 +13,28 @@ npm i tokopedia-gql
 ---
 
 ## Example
+
 ```js
 const toped = require("tokopedia-gql");
 
 const run = async () => {
-    const products = await toped.search({
-        query: "Laptop",
-        shipping: [
-            toped.SHIPPING.JNE,
-            toped.SHIPPING.TIKI,
-            toped.SHIPPING.SICEPAT,
-        ],
-        rating: [4,5],
-        orderBy: toped.ORDER_BY.REVIEW,
-        condition: toped.CONDITION.NEW,
-        priceMax: 20000000
-    });
+	const products = await toped.search({
+		query: "Laptop",
+		shipping: [toped.SHIPPING.JNE, toped.SHIPPING.TIKI, toped.SHIPPING.SICEPAT],
+		rating: [4, 5],
+		orderBy: toped.ORDER_BY.REVIEW,
+		condition: toped.CONDITION.NEW,
+		priceMax: 20000000,
+	});
 
-    console.log(products[0]);
-}
+	console.log(products[0]);
+};
 
 run();
 ```
+
 Output example:
+
 ```js
 {
   id: 509988891,
@@ -71,7 +71,9 @@ Output example:
 ```
 
 ---
+
 ### Todo
-- [ ] More test coverage
-- [ ] Improve documentation
-- [ ] Implement more API endpoint (such as: get product information, get shop information, etc.)
+
+-   [ ] More test coverage
+-   [ ] Improve documentation
+-   [ ] Implement more API endpoint (such as: get product information, get shop information, etc.)

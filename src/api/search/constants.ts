@@ -1,6 +1,6 @@
 export const ENDPOINT = "https://gql.tokopedia.com/";
 
-export  const NORMALIZED_SEARCH_PARAMETER_KEY = {
+export const NORMALIZED_SEARCH_PARAMETER_KEY = {
 	orderBy: "ob",
 	goldMerchant: "goldmerchant",
 	query: "q",
@@ -8,13 +8,13 @@ export  const NORMALIZED_SEARCH_PARAMETER_KEY = {
 	priceMin: "pmin",
 	priceMax: "pmax",
 	searchType: "st",
-	safeSearch: "safe_search"
+	safeSearch: "safe_search",
 } as Record<string, string>;
 
 export const PARAMETER_DELIMITER = {
 	condition: "#",
 	shipping: "#",
-	rt: ","
+	rt: ",",
 } as Record<string, string>;
 
 export const QUERY = `
@@ -147,17 +147,17 @@ export const ORDER_BY = {
 	HIGHEST_PRICE: 4,
 	REVIEW: 5,
 	NEWEST: 9,
-	MOST_RELEVANT: 23
+	MOST_RELEVANT: 23,
 } as const;
 
 export const SEARCH_TYPE = {
 	PRODUCT: "product",
-	SHOP: "shop"
+	SHOP: "shop",
 } as const;
 
 export const CONDITION = {
 	NEW: 1,
-	USED: 2
+	USED: 2,
 } as const;
 
 export const SHIPPING = {
@@ -172,5 +172,5 @@ export const SHIPPING = {
 	JNT: 14,
 	REX: 16,
 	ANTERAJA: 23,
-	LION_PARCEL: 24
+	LION_PARCEL: 24,
 } as const;

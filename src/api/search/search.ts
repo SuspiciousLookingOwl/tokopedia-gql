@@ -3,7 +3,9 @@ import axios from "../../common/axios";
 import * as c from "./constants";
 import { normalizeProductResult, parameterToSearchQuery } from "./helper";
 
-export const search = async (parameters: Partial<SearchParameters> = {}): Promise<Product<"Normalized">[]> => {
+export const search = async (
+	parameters: Partial<SearchParameters> = {}
+): Promise<Product<"Normalized">[]> => {
 	parameters = {
 		device: "desktop",
 		scheme: "https",
@@ -22,18 +24,20 @@ export const search = async (parameters: Partial<SearchParameters> = {}): Promis
 		rating: [],
 		shipping: [],
 		condition: [],
-		...parameters
+		...parameters,
 	};
 
 	const response = await axios(c.ENDPOINT, {
 		method: "POST",
 		data: JSON.stringify({
 			query: c.QUERY,
-			variables: { 
-				params: await parameterToSearchQuery(parameters)
+			variables: {
+				params: await parameterToSearchQuery(parameters),
 			},
 		}),
 	});
 
-	return await Promise.all(response.data.data.ace_search_product_v4.data.products.map(normalizeProductResult));
+	return await Promise.all(
+		response.data.data.ace_search_product_v4.data.products.map(normalizeProductResult)
+	);
 };
