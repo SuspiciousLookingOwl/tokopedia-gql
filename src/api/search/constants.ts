@@ -154,11 +154,12 @@ export const ORDER_BY = {
 
 export const FILTER_CITY = {
 	BANDUNG: 165,
-        BOGOR: 168,
+	BOGOR: 168,
 	KAB_BANDUNG: 148,
 	KAB_BANDUNG_BARAT: 149,
 	CIMAHI: 169
 } as const;
+
 export const SEARCH_TYPE = {
 	PRODUCT: "product",
 	SHOP: "shop",
