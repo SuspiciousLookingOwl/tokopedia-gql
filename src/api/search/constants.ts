@@ -9,11 +9,13 @@ export const NORMALIZED_SEARCH_PARAMETER_KEY = {
 	priceMax: "pmax",
 	searchType: "st",
 	safeSearch: "safe_search",
+	filterCity: "fcity"
 } as Record<string, string>;
 
 export const PARAMETER_DELIMITER = {
 	condition: "#",
 	shipping: "#",
+	filterCity: "#",
 	rt: ",",
 } as Record<string, string>;
 
@@ -150,6 +152,13 @@ export const ORDER_BY = {
 	MOST_RELEVANT: 23,
 } as const;
 
+export const FILTER_CITY = {
+	BANDUNG: 165,
+        BOGOR: 168,
+	KAB_BANDUNG: 148,
+	KAB_BANDUNG_BARAT: 149,
+	CIMAHI: 169
+} as const;
 export const SEARCH_TYPE = {
 	PRODUCT: "product",
 	SHOP: "shop",
