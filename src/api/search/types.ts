@@ -1,4 +1,4 @@
-import { SEARCH_TYPE, CONDITION, ORDER_BY, SHIPPING } from "./constants";
+import { SEARCH_TYPE, CONDITION, ORDER_BY, SHIPPING, FILTER_CITY } from "./constants";
 
 export interface SearchParameters
 	extends Record<string, string | string[] | number | number[] | boolean> {
@@ -6,6 +6,7 @@ export interface SearchParameters
 	official: boolean;
 	condition: typeof CONDITION[keyof typeof CONDITION][];
 	orderBy: typeof ORDER_BY[keyof typeof ORDER_BY];
+	filterCity: typeof FILTER_CITY[keyof typeof FILTER_CITY][];
 	/**
 	 * Keyword of searching
 	 */

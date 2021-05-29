@@ -24,6 +24,7 @@ export const search = async (
 		rating: [],
 		shipping: [],
 		condition: [],
+		filterCity: [],
 		...parameters,
 	};
 
